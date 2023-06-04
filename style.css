@@ -1,0 +1,30 @@
+.Trivia h1{
+font-size: 30px;
+color: rgb(255, 64, 0);
+border-bottom: 1px solid black;
+padding-bottom: 30px;
+}
+.game h2{
+font-size: 30px;
+color: rgb(255, 64, 0);
+
+}
+
+.btn{
+background: white;
+color: black;
+font-style: italic;
+width: 50%;
+border: 2px solid black;
+margin: 20px;
+text-align: left;
+border-radius: 4px;
+cursor: pointer;
+transition: all 0.3s;
+}
+
+.btn:hover{
+background: #222;
+color: antiquewhite;
+
+}
