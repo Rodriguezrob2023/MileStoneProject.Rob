@@ -1,48 +1,58 @@
 let questions = [
 {
-question: "Inside which HTML element do we put the JavaScript?",
+question: "How many championships has Kobe Bryant won?",
   answers: [
-    { text: "<js>", correct: False},
-    { text: "<script>", correct: True},
-    { text: "<scripting>", correct: False},
-    { text: "<javascript>", correct: False},
-]
+    { text: "4", correct: False },
+    { text: "5", correct: True },
+    { text: "2", correct: False },
+    { text: "1", correct: False },
+],
 },
 {
-    question: "How do you write "Hello World" in an alert box?" ,
+    question: "What year was the Vegas Golden Knights founded?" ,
   answers: [
-    { text: "alert("Hello World")", correct: True},
-    { text: "msgBox("Hello World")", correct: False},
-    { text: "alerBox("Hello World")", correct: False},
-    { text: "msg("Hello World")", correct: False},
-]
+    { text: "2017", correct: True },
+    { text: "2018", correct: False },
+    { text: "2020", correct: False },
+    { text: "2021", correct: False },
+],
 },
 {
-    question: "How do you call a function named "myFunction"?" ,
+    question: "What year did the Las Vegas Aces win the championship?" ,
     answers: [
-      { text: "call myFunction()", correct: False},
-      { text: "call function myFunction()", correct: False},
-      { text: "myFunction()", correct: True},
-      { text: "Whatsyourfunction()", correct: False},
-  ]
-
-
-
+      { text: "2000", correct: False },
+      { text: "2016", correct: False },
+      { text: "2022", correct: True },
+      { text: "2018", correct: False },
+  ],
 },
-
-    {
-        question: "Which operator is used to assign a value to a variable"?", 
+{
+        question: "What year did Steph Curry get drafted?", 
         answers: [
-          { text: "-", correct: False},
-           { text: "+", correct: False},
-          { text: ";]", correct: False},
-          { text: "=", correct: True},
-      ]
-    
-    
-    
-    
-}
+          { text: "2007", correct: False},
+           { text: "2008", correct: False},
+          { text: "2006", correct: False},
+          { text: "2009", correct: True},
+      ],
+    },
+    {
+      question: "What's the longest field goal in NFL history?",
+      answers: [
+        { text: "62 yards", correct: false },
+        { text: "63 yards", correct: false },
+        { text: "64 yards", correct: true },
+        { text: "52 yards", correct: false },
+      ],
+    },
+    {
+      question: "How many Super Bowl rings does Tom Brady have?",
+      answers: [
+        { text: "7", correct: true },
+        { text: "9", correct: false },
+        { text: "10", correct: false },
+        { text: "3", correct: false },
+      ],
+    },
 ];
 
 
