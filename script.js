@@ -100,13 +100,13 @@ let questionElement = document.getElementById("question");
 let answerButtonElement = document.getElementById("answer-buttons");
 let nextButton = document.getElementById("next-btn");
 
-//
+//Score is set to 0.
 
 let currentQuestionIndex = 0;
 let score = 0;
 
-// 
-
+//Function initializes the game by resetting the question and score to 0.
+//Then calls function to display the first question.
 
 function startGame() {
   currentQuestionIndex = 0;
@@ -115,11 +115,16 @@ function startGame() {
   showQuestion();
 }
 
+//Function retrieves the current question, then updated the element Index to display the question text.
+
 function showQuestion() {
   resetState();
   let currentQuestion = questions[currentQuestionIndex];
   let questionNo = currentQuestionIndex + 1;
   questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+
+//For each function, creates buttons for each answer using Doc.element function.
+//Click event is attached to each button using the function, then calls the select answer function when button is clicked.
 
   currentQuestion.answers.forEach((answer) => {
     let button = document.createElement("button");
@@ -132,10 +137,15 @@ function showQuestion() {
   nextButton.style.display = "none";
 }
 
+//Reset state clears the answer for and the next button.
+
 function resetState() {
   nextButton.style.display = "none";
   answerButtonElement.innerHTML = "";
 }
+
+//Function is called whenever answer button is clicked. Checks the answer by comparing innerHTML selected button.
+//If the asnwer is correct the score is kept, if not its wrong.
 
 function selectAnswer(event) {
   let selectedButton = event.target;
@@ -144,6 +154,8 @@ function selectAnswer(event) {
   if (selectedButton.innerHTML === currentQuestion.answers.find((answer) => answer.correct).text) {
     score++;
   }
+
+  //Moves to the next Question of the game.If theres more it will show the next set of questions if not it will display results.
 
   currentQuestionIndex++;
 
@@ -154,12 +166,16 @@ function selectAnswer(event) {
   }
 }
 
+//Updating the question elements/inner HTML and displaying the final score. Also displays the "Play Again button".
+
 function showResult() {
   questionElement.innerHTML = "Quiz completed! Your score: " + score + " out of " + questions.length;
   nextButton.innerHTML ="Quiz completed! Your score: " + score + " out of " + questions.length;
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = "block";
 }
+
+//Function to start the game to see the questions, next button function, checks to see if the quiz is complete or not.
 
 startGame();
 nextButton.addEventListener("click", function () {
