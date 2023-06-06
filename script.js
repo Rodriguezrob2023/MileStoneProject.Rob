@@ -1,3 +1,5 @@
+// Questions for the Sport trivia game that I'm asking the User/Player to answer.
+
 let questions = [
   {
     question: "How many championships has Kobe Bryant won?",
@@ -92,12 +94,19 @@ let questions = [
 
 ];
 
+// Variables that are defining the elements --QUESTION/ANSWER/NEXT---
+
 let questionElement = document.getElementById("question");
 let answerButtonElement = document.getElementById("answer-buttons");
 let nextButton = document.getElementById("next-btn");
 
+//
+
 let currentQuestionIndex = 0;
 let score = 0;
+
+// 
+
 
 function startGame() {
   currentQuestionIndex = 0;

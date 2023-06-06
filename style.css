@@ -1,10 +1,22 @@
+*{  
+    justify-content: space-between;   
+    /* border: 1px solid rgb(15, 0, 128);  */
+}
 .Trivia h1{
+ display: flex;
+ flex-direction: row; 
+ align-items: center; 
 font-size: 30px;
 color: teal;
 border-bottom: 1px solid black;
 padding-bottom: 30px;
+justify-content: center;
+
 }
 .game h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 font-size: 30px;
 color: rgb(255, 64, 0);
 
