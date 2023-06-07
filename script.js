@@ -145,7 +145,7 @@ function resetState() {
 }
 
 //Function is called whenever answer button is clicked. Checks the answer by comparing innerHTML selected button.
-//If the asnwer is correct the score is kept, if not its wrong.
+//If the answer is correct the score is kept, if not its wrong.
 
 function selectAnswer(event) {
   let selectedButton = event.target;
