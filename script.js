@@ -107,6 +107,7 @@ let score = 0;
 
 //Function initializes the game by resetting the question and score to 0.
 //Then calls function to display the first question.
+// refered to Javascript game we did in class.
 
 function startGame() {
   currentQuestionIndex = 0;
@@ -116,6 +117,7 @@ function startGame() {
 }
 
 //Function retrieves the current question, then updated the element Index to display the question text.
+// referred to js day 4 slides.
 
 function showQuestion() {
   resetState();
@@ -125,6 +127,7 @@ function showQuestion() {
 
 //For each function, creates buttons for each answer using Doc.element function.
 //Click event is attached to each button using the function, then calls the select answer function when button is clicked.
+//https://www.youtube.com/watch?v=CqDqHiamRHA&ab_channel=TheCodingTrain very good example on how to create buttons/call back in function.
 
   currentQuestion.answers.forEach((answer) => {
     let button = document.createElement("button");
@@ -146,6 +149,7 @@ function resetState() {
 
 //Function is called whenever answer button is clicked. Checks the answer by comparing innerHTML selected button.
 //If the answer is correct the score is kept, if not its wrong.
+//https://www.youtube.com/watch?v=4t8Q_YLpuKw&ab_channel=DevDreamer good video that helped me understand how to write/see the return.
 
 function selectAnswer(event) {
   let selectedButton = event.target;
